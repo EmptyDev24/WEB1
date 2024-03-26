@@ -1,0 +1,106 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+/*Aqui va todo lo de la navbar*/
+header{
+    top: 0;
+    left: 0;
+    padding: 8px 30px;
+    z-index: 100;
+    background-color: coral;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo img{
+    padding: 8px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 150px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 190ms;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/*Colocar un "margin-top de 70px EN MAIN" para bajar contenido en general*/
+
+
+/*Aqui esta todo lo de las "Tarjetas o Card"*/
+.card-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.card{
+    width: 325px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2) ;
+    margin: 20px;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 175px;
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card-content p{
+    color: #666;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn{
+    color: white;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
